@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  whodb:
+    image: clidey/whodb
+    volumes: # (optional for sqlite)
+      - ./app.db:/db/app.db
+    ports:
+      - "8080:8080"
